@@ -1,9 +1,16 @@
+import axios from 'axios';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import { Box, IconButton } from '@mui/material';
 
 export const Thall = () => {
     const onClick = () => {
-        console.log('yo')
+        axios.post('http://localhost:4000/', 'yo')
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
     }
 
     return (
