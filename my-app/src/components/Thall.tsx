@@ -13,9 +13,22 @@ const buttonSx = {
   transform: "skew(-15deg)"
 }
 
+const date = Date.now();
+const date_ob = new Date(date);
+
+const thePresent = {
+  year: date_ob.getFullYear(),
+  month: date_ob.getMonth() + 1,
+  day: date_ob.getDate(),
+  hour: date_ob.getHours(),
+  minute: date_ob.getMinutes(),
+  second: date_ob.getSeconds(),
+}
+
+
 export const Thall = () => {
     const onClick = () => {
-        axios.post('http://localhost:4000/', 'yo')
+        axios.post('http://localhost:4000/', thePresent)
           .then(function (response) {
             console.log(response);
           })
