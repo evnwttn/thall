@@ -1,13 +1,16 @@
 import axios from 'axios';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
-import { Box, IconButton } from '@mui/material';
+import { Box, Button } from '@mui/material';
 
 const buttonSx = {
   position: "absolute",
+  top: "10vw",
+  left: "25vw",
+  width: "50vw",
+  height: "25vw",
+  border: "0.5vw solid #ACD90B",
   color: "#ACD90B",
-  fontSize: "20",
-  top: "20vw",
-  left: "49vw",
+  fontSize: "10vw",
+  transform: "skew(-15deg)"
 }
 
 export const Thall = () => {
@@ -23,9 +26,7 @@ export const Thall = () => {
 
     return (
         <Box>
-            <IconButton sx={buttonSx} onClick={onClick}>
-                <AcUnitIcon />
-            </IconButton>
+            <Button variant="text" sx={buttonSx} onClick={onClick}>thall</Button>
         </Box>
     )
 }
