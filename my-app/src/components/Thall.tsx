@@ -7,10 +7,11 @@ const buttonSx = {
   left: "25vw",
   width: "50vw",
   height: "25vw",
-  border: "0.5vw solid #ACD90B",
-  color: "#ACD90B",
+  border: "0.5vw solid #F29B03",
+  color: "#ED8806",
   fontSize: "10vw",
-  transform: "skew(-15deg)"
+  fontWeight: "800",
+  transform: "skew(-15deg)",
 }
 
 const date = Date.now();
